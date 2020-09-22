@@ -267,7 +267,11 @@ h2 {
     color: #ffffff;
     text-decoration: none;
     text-align: center; }
+    .work .work-item a img {
+      -o-object-fit: cover;
+      object-fit: cover; }
     .work .work-item a i {
+      position: absolute;
       -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
       transform: scale(0.8);
