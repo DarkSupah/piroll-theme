@@ -20,77 +20,95 @@
   <header class="main-header" id="home">
     <div class="container">
       <div class="row header-wrapper">
-        <img src="img/logo.png" alt="Company Logo">
-        <nav class="top-nav">
-          <ul>
-            <li><a href="#home" class="nav-item active">Home</a></li>
-            <li><a href="#about" class="nav-item">About</a></li>
-            <li><a href="#work" class="nav-item">Work</a></li>
-            <li><a href="#process" class="nav-item">Process</a></li>
-            <li><a href="#services" class="nav-item">Services</a></li>
-            <li><a href="#testimonials" class="nav-item">Testimonials</a></li>
-            <li><a href="#contact" class="nav-item">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="col-md-1">
+          <img src="img/logo.png" alt="Company Logo" class="m-auto m-md-0 d-block">
+        </div>
+        <div class="col-md-11">
+          <nav class="top-nav">
+            <ul>
+              <li><a href="#home" class="nav-item active">Home</a></li>
+              <li><a href="#about" class="nav-item">About</a></li>
+              <li><a href="#work" class="nav-item">Work</a></li>
+              <li><a href="#process" class="nav-item">Process</a></li>
+              <li><a href="#services" class="nav-item">Services</a></li>
+              <li><a href="#testimonials" class="nav-item">Testimonials</a></li>
+              <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <div class="row">
-        <div class="col-6 offset-6 motto">
+        <div class="col-md-6 offset-md-6 motto">
           <h1 class="motto-header">We Design and Develop</h1>
           <p class="motto-desc">
             We are a new design studio based in USA. We have over 
             20 years of combined experience, and know a thing or two 
             about designing websites and mobile apps.
           </p>
-          <a href="#contact" class="btn-accent">Contact us</a>
+          <a href="#contact" class="btn-accent mx-auto mx-md-0" style="margin-bottom: 20px;">Contact us</a>
         </div>
       </div>
     </div>
   </header>
 
   <section class="about-us" id="about">
-    <h2>About Us</h2>
-    <p class="about-desc">
-      Divide have don't man wherein air fourth. Own itself make have night won't make. 
-      A you under Seed appear which good give. Own give air without fowl moveth dry first 
-      heaven fruit, dominion she'd won't very all.
-    </p>
-    <img src="img/signature.png" alt="Signature">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          
+          <h2>About Us</h2>
+          <p class="about-desc">
+            Divide have don't man wherein air fourth. Own itself make have night won't make. 
+            A you under Seed appear which good give. Own give air without fowl moveth dry first 
+            heaven fruit, dominion she'd won't very all.
+          </p>
+
+          <img src="img/signature.png" alt="Signature">
+
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="prof-skills">
     <div class="container">
       <div class="row">
-        <h2>Professional Skills</h2>
+        <div class="col">
+          <h2>Professional Skills</h2>
 
-        <div class="skill">
-          <span class="skill-title">UI/UX Design
-            <span class="skill-value">75%</span>
-          </span>
-  
-          <div class="meter">
-            <span style="width: 75%"></span>
+          <div class="row no-gutters">
+
+            <div class="skill">
+              <span class="skill-title">UI/UX Design
+                <span class="skill-value">75%</span>
+              </span>
+      
+              <div class="meter">
+                <span style="width: 75%"></span>
+              </div>
+            </div>
+    
+            <div class="skill">
+              <span class="skill-title">Web Development
+                <span class="skill-value">90%</span>
+              </span>
+      
+              <div class="meter">
+                <span style="width: 90%"></span>
+              </div>
+            </div>
+    
+            <div class="skill">
+              <span class="skill-title">Marketing
+                <span class="skill-value">65%</span>
+              </span>
+      
+              <div class="meter">
+                <span style="width: 65%"></span>
+              </div>
+            </div>
+
           </div>
-        </div>
-
-        <div class="skill">
-          <span class="skill-title">Web Development
-            <span class="skill-value">90%</span>
-          </span>
-  
-          <div class="meter">
-            <span style="width: 90%"></span>
-          </div>
-        </div>
-
-        <div class="skill">
-          <span class="skill-title">Marketing
-            <span class="skill-value">65%</span>
-          </span>
-  
-          <div class="meter">
-            <span style="width: 65%"></span>
-          </div>
-
         </div>
       </div>
     </div>
@@ -100,7 +118,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-3 stat">
+        <div class="col-6 col-md-3 stat">
           <i class="pe-7s-portfolio"></i>
 
           <div class="stat-wrapper">
@@ -109,7 +127,7 @@
           </div>
         </div>
 
-        <div class="col-3 stat">
+        <div class="col-6 col-md-3 stat">
           <i class="pe-7s-clock"></i>
 
           <div class="stat-wrapper">
@@ -118,7 +136,7 @@
           </div>
         </div>
 
-        <div class="col-3 stat">
+        <div class="col-6 col-md-3 stat">
           <i class="pe-7s-star"></i>
 
           <div class="stat-wrapper">
@@ -127,7 +145,7 @@
           </div>
         </div>
 
-        <div class="col-3 stat">
+        <div class="col-6 col-md-3 stat">
           <i class="pe-7s-like"></i>
 
           <div class="stat-wrapper">
@@ -145,68 +163,84 @@
     <div class="container-fluid">
       <div class="row">
 
-        <div class="work-item dark">
-          <span class="overlay"></span>
+        <div class="work-item dark col-md-3">
+          <div class="row h-100">
+            <span class="overlay"></span>
 
-          <a href="#">
-            <i class="pe-7s-look"></i>
-          </a>
+            <a href="#">
+              <i class="pe-7s-look"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="work-item light">
-          <span class="overlay"></span>
+        <div class="work-item light col-md-3">
+          <div class="row h-100">
+            <span class="overlay"></span>
 
-          <a href="#">
-            <i class="pe-7s-look"></i>
-          </a>
+            <a href="#">
+              <i class="pe-7s-look"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="work-item dark">
-          <span class="overlay"></span>
+        <div class="work-item dark col-md-3">
+          <div class="row h-100">
+            <span class="overlay"></span>
 
-          <a href="#">
-            <i class="pe-7s-look"></i>
-          </a>
+            <a href="#">
+              <i class="pe-7s-look"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="work-item light">
-          <span class="overlay"></span>
+        <div class="work-item light col-md-3">
+          <div class="row h-100">
+            <span class="overlay"></span>
 
-          <a href="#">
-            <i class="pe-7s-look"></i>
-          </a>
+            <a href="#">
+              <i class="pe-7s-look"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="work-item light">
-          <span class="overlay"></span>
+        <div class="work-item light col-md-3">
+          <div class="row h-100">
+            <span class="overlay"></span>
 
-          <a href="#">
-            <i class="pe-7s-look"></i>
-          </a>
+            <a href="#">
+              <i class="pe-7s-look"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="work-item dark">
-          <span class="overlay"></span>
+        <div class="work-item dark col-md-3">
+          <div class="row h-100">
+            <span class="overlay"></span>
 
-          <a href="#">
-            <i class="pe-7s-look"></i>
-          </a>
+            <a href="#">
+              <i class="pe-7s-look"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="work-item light">
-          <span class="overlay"></span>
+        <div class="work-item light col-md-3">
+          <div class="row h-100">
+            <span class="overlay"></span>
 
-          <a href="#">
-            <i class="pe-7s-look"></i>
-          </a>
+            <a href="#">
+              <i class="pe-7s-look"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="work-item dark">
-          <span class="overlay"></span>
+        <div class="work-item dark col-md-3">
+          <div class="row h-100">
+            <span class="overlay"></span>
 
-          <a href="#">
-            <i class="pe-7s-look"></i>
-          </a>
+            <a href="#">
+              <i class="pe-7s-look"></i>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -240,9 +274,9 @@
 
     <div class="container">
 
-      <div class="row" style="margin-bottom: 60px">
+      <div class="row">
 
-        <div class="col-3 service-item">
+        <div class="col-6 col-md-3 service-item">
           <i class="pe-7s-diamond"></i>
           <h3>UI / UX Design</h3>
           <p>
@@ -251,7 +285,7 @@
           </p>
         </div>
   
-        <div class="col-3 service-item">
+        <div class="col-6 col-md-3 service-item">
           <i class="pe-7s-arc"></i>
           <h3>Web Development</h3>
           <p>
@@ -260,16 +294,16 @@
           </p>
         </div>
   
-        <div class="col-3 service-item">
+        <div class="col-6 col-md-3 service-item">
           <i class="pe-7s-phone"></i>
-          <h3>App / Moblie</h3>
+          <h3>App / Mobile</h3>
           <p>
             Dominion man second spirit he,
             earth they're creeping
           </p>
         </div>
   
-        <div class="col-3 service-item">
+        <div class="col-6 col-md-3 service-item">
           <i class="pe-7s-joy"></i>
           <h3>Game Design</h3>
           <p>
@@ -277,11 +311,8 @@
             multiply appear life be
           </p>
         </div>
-
-      </div>
-
-      <div class="row">
-        <div class="col-3 service-item">
+        
+        <div class="col-6 col-md-3 service-item">
           <i class="pe-7s-plane"></i>
           <h3>SEO / Marketing</h3>
           <p>
@@ -290,7 +321,7 @@
           </p>
         </div>
   
-        <div class="col-3 service-item">
+        <div class="col-6 col-md-3 service-item">
           <i class="pe-7s-star"></i>
           <h3>Photography</h3>
           <p>
@@ -299,7 +330,7 @@
           </p>
         </div>
   
-        <div class="col-3 service-item">
+        <div class="col-6 col-md-3 service-item">
           <i class="pe-7s-magic-wand"></i>
           <h3>Graphic design</h3>
           <p>
@@ -308,7 +339,7 @@
           </p>
         </div>
   
-        <div class="col-3 service-item">
+        <div class="col-6 col-md-3 service-item">
           <i class="pe-7s-paint-bucket"></i>
           <h3>Illustrations</h3>
           <p>
@@ -331,31 +362,31 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <blockquote>
-            <p>
-              “ Outstanding job and exceeded all expectations. It was a pleasure 
+            <q>
+              Outstanding job and exceeded all expectations. It was a pleasure 
               to work with them on a sizable first project and am looking 
-              forward to start the next one asap. ”
-            </p>
+              forward to start the next one asap.
+            </q>
             <cite>Michael Hopkins</cite>
           </blockquote>
         </div>
         <div class="carousel-item">
           <blockquote>
-            <p>
-              “ Outstanding job and exceeded all expectations. It was a pleasure 
+            <q>
+              Outstanding job and exceeded all expectations. It was a pleasure 
               to work with them on a sizable first project and am looking 
-              forward to start the next one asap. ”
-            </p>
+              forward to start the next one asap.
+            </q>
             <cite>Michael Hopkins</cite>
           </blockquote>
         </div>
         <div class="carousel-item">
           <blockquote>
-            <p>
-              “ Outstanding job and exceeded all expectations. It was a pleasure 
+            <q>
+              Outstanding job and exceeded all expectations. It was a pleasure 
               to work with them on a sizable first project and am looking 
-              forward to start the next one asap. ”
-            </p>
+              forward to start the next one asap.
+            </q>
             <cite>Michael Hopkins</cite>
           </blockquote>
         </div>
@@ -366,7 +397,7 @@
   
   <section class="client-logos">
     <div class="container">
-      <div class="logos">
+      <div class="row logos">
         <img src="img/clients/vintage.png" alt="Vitange Handmade">
         <img src="img/clients/mountain.png" alt="Mountain">
         <img src="img/clients/authentic.png" alt="Authentic Collection">
@@ -387,15 +418,15 @@
         if this could be the start of something beautiful.
       </p>
 
-      <form method="POST" class="offset-1 col-8">
+      <form method="POST" class="offset-md-1 col-md-8">
 
         <div class="row">
 
-          <div class="col">
+          <div class="col-md">
             <input type="text" name="name" placeholder="Your Name">
           </div>
 
-          <div class="col">
+          <div class="col-md">
             <input type="text" name="email" placeholder="Your Email">
           </div>
 
@@ -429,7 +460,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-3">
+        <div class="col-md-3 col-6 mb-4 mb-md-0">
           <span class="company-name">Piroll Design, Inc</span>
 
           <ul style="margin-top: 27px;">
@@ -439,7 +470,7 @@
 
         </div>
 
-        <div class="col-3 offset-1">
+        <div class="col-md-3 col-6 offset-md-1">
 
           <ul>
             <li>hello@pirolltheme.com</li>
@@ -448,7 +479,7 @@
 
         </div>
 
-        <div class="col-3">
+        <div class="col-md-3 col-6">
 
           <ul>
 
@@ -492,7 +523,7 @@
 
         </div>
 
-        <div class="col-2">
+        <div class="col-md-2 col-6">
           <ul>
 
             <li>

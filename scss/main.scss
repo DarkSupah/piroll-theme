@@ -8,6 +8,133 @@ html{
 body{
   font-size: 12px;
   font-family: 'Nunito Sans', sans-serif;
+
+  padding: 0;
+  margin: 0;
+}
+
+// sm breakpoint
+@media (max-width: 767px)
+{
+  .main-header{
+
+    .top-nav{
+      margin-top: 20px;
+
+      ul{
+
+        li{
+          float: none;
+          text-align: center;
+          margin: 0;
+          font-size: 18px;
+          padding: 4px 0;
+        }
+      }
+    }
+  }
+
+  .motto{
+
+    .motto-header{
+      margin-top: 80px;
+    }
+  }
+
+  .about-us{
+    .about-desc{
+      padding: 0;
+    }
+  }
+
+  .process{
+    p{
+      padding: 0;
+    }
+  }
+
+  .testimonials{
+
+    .carousel-item{
+
+      blockquote{
+        padding: 0;
+      }
+    }
+  }
+
+  .contact{
+
+    p{
+      padding: 0;
+    }
+  }
+
+  footer{
+    
+    .row{
+      margin: 20px 0;
+    }
+  }
+}
+
+// md+ breakpoint
+@media (min-width: 768px) {
+  .main-header{
+
+    .top-nav{
+      margin-top: 0px;
+
+      ul{
+        float: right;
+
+        li{
+          float: left;
+      
+          &:not(:first-child){
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .motto{
+
+    .motto-header{
+      margin-top: 172px;
+    }
+  }
+
+  .about-us{
+    .about-desc{
+      padding: 0 35%;
+    }
+  }
+
+    
+  .process{
+    p{
+      padding: 0 35%;
+    }
+  }
+
+  .testimonials{
+
+    .carousel-item{
+      
+      blockquote{
+        padding: 0 35%;
+      }
+    }
+  }
+
+  .contact{
+
+    p{
+      padding: 0 35%;
+    }
+  }
 }
 
 h2{
@@ -44,7 +171,7 @@ h2{
 
 .main-header{
   padding-top: 38px;
-  height: 670px;
+  min-height: 670px;
 
   background-color: $secondary;
 
@@ -55,7 +182,6 @@ h2{
   }
 
   .motto{
-    padding: 175px 0 201px 0;
 
     .motto-header{
       margin-bottom: 33px;
@@ -88,11 +214,6 @@ h2{
     padding: 0;
 
     li{
-      float: left;
-      
-      &:not(:first-child){
-        margin-left: 30px;
-      }
 
       .nav-item{
         color: $font-main;
@@ -109,7 +230,7 @@ h2{
 }
 
 .about-us{
-  height: 420px;
+  min-height: 420px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,12 +250,11 @@ h2{
     line-height: 24px;
 
     margin-bottom: 38px;
-    padding: 0 35%;
   }
 }
 
 .prof-skills{
-  height: 570px;
+  min-height: 570px;
   display: flex;
   align-items: center;
 
@@ -156,6 +276,8 @@ h2{
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
+  width: 100%;
+  max-width: 500px;
 
   &:not(:last-child){
     margin-bottom: 40px;
@@ -175,7 +297,7 @@ h2{
     margin-top: 10px;
 
     height: 3px;
-    width: 500px;
+    width: 100%;
 
     background-color: #d8d8d8;
 
@@ -224,7 +346,9 @@ h2{
 
   .work-item{
     height: 250px;
-    width: 25%;
+    // min-width: 25%;
+    // max-width: 100%;
+    // width: 400px;
     position: relative;
 
     transition: background-color .15s ease-out;
@@ -307,7 +431,7 @@ h2{
 
 .process{
   background-color: #ffffff;
-  height: 930px;
+  min-height: 930px;
 
   h2{
     text-align: center;
@@ -321,7 +445,6 @@ h2{
     text-align: center;
 
     margin-bottom: 55px;
-    padding: 0 33%;
 
     font-size: 16px;
   }
@@ -334,13 +457,13 @@ h2{
 
 .services{
   background-color: #f5f5f5;
-  padding: 60px 0;
 
   .service-item{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 30px 0;
 
     i{
       font-size: 40px;
@@ -367,7 +490,7 @@ h2{
 
 .testimonials{
   background-color: $accent;
-  height: 500px;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -402,14 +525,18 @@ h2{
   }
 
   blockquote{
+    display: flex;
+    flex-direction: column;
+
     text-align: center;
     color: #ffffff;
-    padding: 0 33%;
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 30px;
 
     cite{
+      margin-top: 20px;
+
       font-family: 'Montserrat', sans-serif;
       text-transform: uppercase;
       font-size: 12px;
@@ -423,7 +550,7 @@ h2{
   .logos{
     display: flex;
     height: 200px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
   }
 }
@@ -439,7 +566,6 @@ h2{
     margin-top: 34px;
     margin-bottom: 39px;
     font-size: 16px;
-    padding: 0 25%;
     text-align: center;
     color: $font-secondary;
   }
@@ -478,7 +604,7 @@ h2{
 }
 
 footer{
-  height: 284px;
+  min-height: 284px;
   display: flex;
   align-items: center;
   justify-content: center;
